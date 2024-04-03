@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway';
+    font-weight: bold;
+}
+body{
+    max-width: 100%;
+    min-height: 100%;
+    background: url('./Asset/Background.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    /* display: flex; */
+    justify-content: center;
+}
+/* NAVBAR CSS */
+.header{
+    position:absolute;
+    margin: auto;
+    width:100%;
+    height: 100px;
+    background: linear-gradient(to bottom,#110EA1 ,#080752 );
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    color: white;
+}
+.logo{
+    position: relative;
+    top:10px;
+    left:10px;
+}
+.navbar{
+    /* padding-right:500px; */
+    width: 100%;
+    /* right:950px; */
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: 40px;
+}
+.navbar>ul{
+    list-style: none;
+    /* background: red; */
+}
+.navbar>ul>li{
+    display: inline-block;
+    position: relative;
+}
+.navbar>ul>li>a{
+    display: block;
+    /* padding:20px 25px; */
+    padding-left: 40px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size:18px;
+}
+.navbar ul li ul.dropdown>li{
+    display: block;
+    text-decoration: none;/
+}
+.navbar ul li ul.dropdown{
+    /* width:100%; */
+    background: white;
+    position: absolute;
+    left:33px;
+    z-index: 999;
+    display: none;
+}
+.dropdown>li>a{
+    color: #0C0A72;
+    text-decoration: none;
+}
+.navbar ul li a:hover{
+    /* background: black; */
+    color: black;
+    transition: all 0.3s ease-in;
+}
+.navbar .Arrow:hover img{
+    transform: rotate(180deg);
+    transition: all .3s ease;
+}
+.navbar ul li:hover ul.dropdown{
+    display: block;
+    color: #0C0A72;
+    width: 120px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 13px;
+    text-decoration: none;
+    transition: none;
+    opacity: 80%;
+}
+.login{
+    /* margin: auto; */
+    /* padding: auto; */
+    /* width: 100%; */
+    left: 500px;
+    display: flex;
+}
+.login2>a{
+    text-decoration: none;
+    color: white;
+}
+
+/* FOOTER CSS */
+footer{
+    font-family: "Raleway";
+    font-size: 12px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background: linear-gradient(to bottom,#110EA1 ,#080752 );
+    color: #fff;
+    padding: 60px 0 30px;
+    line-height: 20px;
+    margin-top: 15%;
+}
+
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col{
+    flex-basis: 25%;
+    padding: 5px;
+    position: relative;
+}
+
+.contact-info{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.contact-info a{
+    color: white;
+    text-decoration: none;
+}
+
+.contact-info img{
+    margin-right: 10px;
+}
+
+.logo{
+    width: 80px;
+    margin-bottom: 30px;
+}
+
+.col h3{
+    width: fit-content;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid white;
+    margin: 20px auto;
+}
+
+.copyright{
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* ISI */
+form{
+    font-family:"Montserrat";
+    width: 100%;
+    margin: auto;
+    margin-top: 150px;
+    /* margin-left: 5%; */
+    /* padding-left: 100px; */
+    /* margin-left: 10px; */
+}
+.middle{
+    font-family: 'Montserrat';
+    position: relative;
+    top:120px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    color: #0C0A72;
+    font-size: 26px;
+}
+.container{
+    position: relative;
+    max-width: 100%;
+    margin-top: 50px;
+    margin-left:190px ;
+    font-size: 20px;
+    font-family: 'Montserrat';
+    /* margin: 10px 20px 30px 40px; */
+    /* left: 90px; */
+    /* margin-right: 0; */
+    /* left: 100px; */
+
+}
+.inputname>input{
+    width: 220px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+.inputfield{
+    position: relative;
+    display: flex;
+    width: 25%;
+    border-radius: 5px;
+    background: white;
+    border: solid 2px;
+    margin-bottom: 10px;
+}
+.inputfield img{
+    position: relative;
+    top:3px;
+    left:10px;
+    /* margin: auto; */
+}
+.pilihkelas{
+    position: relative;
+    display: flex;
+    width: 15%;
+    max-height: 100px;
+    height: 30px;
+    /* padding: 1px; */
+    border-radius: 5px;
+    border: solid 2px;
+    margin-bottom: 10px;
+}
+.submit{
+    position: relative;
+    border-radius: 80px;
+    border: none;
+    background: #141286;
+    color: white;
+    width: 150px;
+    height: 50px;
+    top:20px;
+    cursor: pointer;
+}
+.submit:hover{
+    background: #110EA1;
+    transition: all .3s ease-in-out;
+}
+.button-box{
+    width: 200px;
+    margin: 15px auto;
+    position: relative;
+    border: none;
+    border-radius: 30px;
+    background: white;
+    right: 90px;
+}
+.toggle-btn{
+    font-family: 'Montserrat';
+    font-weight: bold;
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    text-align: center;
+    border-radius: 30px;
+}
+.toggle-btn1{
+    font-family: 'Montserrat';
+    font-weight: bold;
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    text-align: center;
+    border-radius: 30px;
+}
+#btn{
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 90px;
+    height: 100%;
+    background-color: aqua;
+    border-radius: 30px;
+    transition: .5s;
+}
+.newimage{
+    position: relative;
+    float: left;
+}
+.inputplace{
+    position: relative;
+    top: 50px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+.pilihkelas{
+    font-family: 'Montserrat';
+    position: relative;
+    display: flex;
+    width: 15%;
+    max-height: 100px;
+    height: 30px;
+    /* padding: 1px; */
+    border-radius: 5px;
+    border: solid 2px;
+}

@@ -1,0 +1,793 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway';
+    box-sizing: border-box;
+}
+
+.header{
+    position:absolute;
+    margin: auto;
+    width:100%;
+    height: 100px;
+    /* padding: 1.3rem 10%; */
+    /* padding-right: 200px; */
+    background: linear-gradient(to bottom,#110EA1 ,#080752 );
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    color: white;
+    font-weight: bold;
+    /* margin-bottom: 100%; */
+}
+.logo{
+    position: relative;
+    top:10px;
+    left:10px;
+}
+.navbar{
+    /* padding-right:500px; */
+    width: 100%;
+    /* right:950px; */
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: 40px;
+}
+.navbar>ul{
+    list-style: none;
+    /* background: red; */
+}
+.navbar>ul>li{
+    display: inline-block;
+    position: relative;
+}
+.navbar>ul>li>a{
+    display: block;
+    /* padding:20px 25px; */
+    padding-left: 40px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size:18px;
+}
+.navbar ul li ul.dropdown>li{
+    display: block;
+    text-decoration: none;/
+}
+.navbar ul li ul.dropdown{
+    /* width:100%; */
+    background: white;
+    position: absolute;
+    left:33px;
+    z-index: 999;
+    display: none;
+}
+.dropdown>li>a{
+    color: #0C0A72;
+    text-decoration: none;
+}
+.navbar ul li a:hover{
+    /* background: black; */
+    color: black;
+    transition: all 0.3s ease-in;
+}
+.navbar .Arrow:hover img{
+    transform: rotate(180deg);
+    transition: all .3s ease;
+}
+.navbar ul li:hover ul.dropdown{
+    display: block;
+    color: #0C0A72;
+    width: 120px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 13px;
+    text-decoration: none;
+    transition: none;
+    opacity: 80%;
+}
+.login{
+    /* margin: auto; */
+    /* padding: auto; */
+    /* width: 100%; */
+    left: 500px;
+    display: flex;
+}
+.login2>a{
+  text-decoration: none;
+  color: white;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('./Asset/Background.png');
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat';
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 40px 0;
+    margin-bottom: 120px;
+    font-weight: bolder;
+    
+}
+
+.content h1 {
+    font-size: 90px; 
+    font-weight: bolder; 
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    color: #0C0A72;
+  }
+
+
+.ImgAsrama {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+
+.intro h2 {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: #0C0A72;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.intro h3 {
+    color: #0C0A72;
+    font-size: 20px;
+    text-align: center;
+    line-height: 2.5;
+    font-weight: lighter;
+
+}
+
+.Facility {
+    margin-top: 100px;
+    font-size: 20px;
+    color: #0C0A72;
+    text-align: center;
+    max-height: 1550px;
+}
+.Facility h2{
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+
+
+.Join h2{
+    font-size: 30px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    text-align: center;
+    color: #0C0A72;
+    margin-bottom: 20px;
+}
+
+.Join h3{
+    font-size: 20px;
+    font-weight: lighter;
+    text-align: center;
+    color: #0C0A72;
+    line-height: 2;
+    margin-bottom: 50px;
+}
+
+.Join {
+    text-align: center;
+  }
+  
+
+  .LinkContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Link {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    display: block;
+
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #0C0A72;
+    
+  }
+  
+  .LinkText {
+    text-decoration: none;
+    color: #0C0A72;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 0 0 3px;
+  }
+
+  .contain{
+    width: 589px;
+    padding: 5px;
+    background: transparent;
+    margin: 100px auto;
+    display: flex;
+    right: 120px;
+    /* justify-content: center; */
+    /* margin-left: 90px; */
+    position: relative;
+    float: left;
+  }
+  .lab1{
+    position: relative;
+    float: left;
+    top: 60px;
+    left: 230px;
+  }
+  .box1{
+    width: 290px;
+    height: 240px;
+    background: url('./Asset/KitchenLeft.png');
+    /* float: left; */
+    border-radius: 10px;
+    margin: 2px 10px;
+    overflow-x: hidden;
+    padding: 10px;
+    flex: 1;
+    transition: 1s;
+  }
+  .box1:hover{
+    /* transform:scale(1.3);
+    box-shadow: 2px 2px 2px #000;
+    z-index: 2; */
+    flex: 2.5;
+  }
+  .box2{
+    width: 90px;
+    height: 240px;
+    background: url('./Asset/KitchenMiddle.png');
+    /* float: left; */
+    border-radius: 10px;
+    margin: 2px 10px;
+    overflow-x: hidden;
+    padding: 10px;
+    flex: 1;
+    transition: 1s;
+  }
+  .box2:hover{
+    /* transform:scale(1.3);
+    box-shadow: 2px 2px 2px #000;
+    z-index: 2; */
+    flex: 2.5;
+  }
+  .box3{
+    width: 90px;
+    height: 240px;
+    background: url('./Asset/KitchenRight.png');
+    /* float: left; */
+    border-radius: 10px;
+    margin: 2px 10px;
+    overflow-x: hidden;
+    padding: 10px;
+    flex: 1;
+    transition: 1s;
+  }
+  .box3:hover{
+    /* transform:scale(1.3);
+    box-shadow: 2px 2px 2px #000;
+    z-index: 2; */
+    flex: 2.5;
+  }
+  .contain1{
+    width: 589px;
+    padding: 5px;
+    background: transparent;
+    margin: 100px auto;
+    display: flex;
+    bottom: 454px;
+    left: 80px;
+    position: relative;
+    float: right;
+  }
+  .lab2{
+    position: relative;
+    float: right;
+    top: 60px;
+    /* left: 170px; */
+    right: 150px;
+  }
+  .box4{
+    width: 90px;
+    height: 240px;
+    background: url('./Asset/Komun1.png');
+    /* float: left; */
+    border-radius: 10px;
+    margin: 2px 10px;
+    overflow-x: hidden;
+    padding: 10px;
+    flex: 1;
+    transition: 1s;
+  }
+  .box4:hover{
+    /* transform:scale(1.3);
+    box-shadow: 2px 2px 2px #000;
+    z-index: 2; */
+    flex: 2.5;
+  }
+  .box5{
+    width: 90px;
+    height: 240px;
+    background: url('./Asset/Komun2.png');
+    /* float: left; */
+    border-radius: 10px;
+    margin: 2px 10px;
+    overflow-x: hidden;
+    padding: 10px;
+    flex: 1;
+    transition: 1s;
+  }
+  .box5:hover{
+    /* transform:scale(1.3);
+    box-shadow: 2px 2px 2px #000;
+    z-index: 2; */
+    flex: 2.5;
+  }
+  .box6{
+    width: 90px;
+    height: 240px;
+    background: url('./Asset/Komun3.png');
+    /* float: left; */
+    border-radius: 10px;
+    margin: 2px 10px;
+    overflow-x: hidden;
+    padding: 10px;
+    flex: 1;
+    transition: 1s;
+  }
+  .box6:hover{
+    /* transform:scale(1.3);
+    box-shadow: 2px 2px 2px #000;
+    z-index: 2; */
+    flex: 2.5;
+  }
+  .contain2{
+    width: 589px;
+    padding: 5px;
+    background: transparent;
+    margin: 100px auto;
+    display: flex;
+    bottom: 570px;
+    right: 50px;
+    position: relative;
+    float: left;
+  }
+  .lab3{
+    position: relative;
+    float: right;
+    bottom: 50px;
+    /* left: 170px; */
+    right: 150px;
+  }
+  .box7{
+    width: 290px;
+    height: 240px;
+    background: url('./Asset/CWSLEFT.png');
+    /* float: left; */
+    border-radius: 10px;
+    margin: 2px 10px;
+    overflow-x: hidden;
+    padding: 10px;
+    flex: 1;
+    transition: 1s;
+  }
+  .box7:hover{
+    /* transform:scale(1.3);
+    box-shadow: 2px 2px 2px #000;
+    z-index: 2; */
+    flex: 2.5;
+  }
+  .box8{
+    width: 90px;
+    height: 240px;
+    background: url('./Asset/CWSMID.png');
+    /* float: left; */
+    border-radius: 10px;
+    margin: 2px 10px;
+    overflow-x: hidden;
+    padding: 10px;
+    flex: 1;
+    transition: 1s;
+  }
+  .box8:hover{
+    /* transform:scale(1.3);
+    box-shadow: 2px 2px 2px #000;
+    z-index: 2; */
+    flex: 2.5;
+  }
+  .box9{
+    width: 90px;
+    height: 240px;
+    background: url('./Asset/CWSRIGHT.png');
+    /* float: left; */
+    border-radius: 10px;
+    margin: 2px 10px;
+    overflow-x: hidden;
+    padding: 10px;
+    flex: 1;
+    transition: 1s;
+  }
+  .box9:hover{
+    flex: 2.5;
+  }
+  .contain3{
+    width: 589px;
+    padding: 5px;
+    background: transparent;
+    margin: 100px auto;
+    display: flex;
+    bottom: 1025px;
+    left: 80px;
+    position: relative;
+    float: right;
+  }
+  .lab4{
+    position: relative;
+    float: right;
+    /* left: 170px; */
+    bottom: 505px;
+    right: 150px;
+  }
+  .box10{
+    background: url('./Asset/Komun1.png');
+    /* float: left; */
+    border-radius: 10px;
+    margin: 2px 10px;
+    overflow-x: hidden;
+    padding: 10px;
+    flex: 1;
+    transition: 1s;
+  }
+  .box10:hover{
+    flex: 2.5;
+  }
+  .box11{
+    background: url('./Asset/Komun2.png');
+    border-radius: 10px;
+    margin: 2px 10px;
+    overflow-x: hidden;
+    padding: 10px;
+    flex: 1;
+    transition: 1s;
+  }
+  .box11:hover{
+    flex: 2.5;
+  }
+  .box12{
+    width: 90px;
+    height: 240px;
+    background: url('./Asset/Komun3.png');
+    border-radius: 10px;
+    margin: 2px 10px;
+    overflow-x: hidden;
+    padding: 10px;
+    flex: 1;
+    transition: 1s;
+  }
+  .box12:hover{
+    flex: 2.5;
+  }
+  .contain4{
+    width: 589px;
+    padding: 5px;
+    background: transparent;
+    margin: 100px auto;
+    display: flex;
+    bottom: 1140px;
+    right: 50px;
+    position: relative;
+    float: left;
+  }
+  .lab5{
+    position: relative;
+    float: left;
+    bottom: 630px;
+    left: 170px;
+  }
+  .box13{
+    width: 290px;
+    height: 240px;
+    background: url('./Asset/LaundryLeft.png');
+    border-radius: 10px;
+    margin: 2px 10px;
+    overflow-x: hidden;
+    padding: 10px;
+    flex: 1;
+    transition: 1s;
+  }
+  .box13:hover{
+    flex: 2.5;
+  }
+  .box14{
+    width: 90px;
+    height: 240px;
+    background: url('./Asset/LaundryMiddle.png');
+    border-radius: 10px;
+    margin: 2px 10px;
+    overflow-x: hidden;
+    padding: 10px;
+    flex: 1;
+    transition: 1s;
+  }
+  .box14:hover{
+    flex: 2.5;
+  }
+  .box15{
+    width: 90px;
+    height: 240px;
+    background: url('./Asset/LaundryRight.png');
+    border-radius: 10px;
+    margin: 2px 10px;
+    overflow-x: hidden;
+    padding: 10px;
+    flex: 1;
+    transition: 1s;
+  }
+  .box15:hover{
+    flex: 2.5;
+  }
+
+  .contain5{
+    width: 589px;
+    padding: 5px;
+    background: transparent;
+    margin: 100px auto;
+    display: flex;
+    bottom: 1594px;
+    left: 80px;
+    position: relative;
+    float: right;
+  }
+  .lab6{
+    position: relative;
+    float: right;
+    /* left: 170px; */
+    bottom: 1085px;
+    right: 150px;
+  }
+  .box16{
+    background: url('./Asset/KiosLeft.png');
+    /* float: left; */
+    border-radius: 10px;
+    margin: 2px 10px;
+    overflow-x: hidden;
+    padding: 10px;
+    flex: 1;
+    transition: 1s;
+  }
+  .box16:hover{
+    flex: 2.5;
+  }
+  .box17{
+    background: url('./Asset/KiosMid.png');
+    border-radius: 10px;
+    margin: 2px 10px;
+    overflow-x: hidden;
+    padding: 10px;
+    flex: 1;
+    transition: 1s;
+  }
+  .box17:hover{
+    flex: 2.5;
+  }
+  .box18{
+    width: 90px;
+    height: 240px;
+    background: url('./Asset/KiosRight.png');
+    border-radius: 10px;
+    margin: 2px 10px;
+    overflow-x: hidden;
+    padding: 10px;
+    flex: 1;
+    transition: 1s;
+  }
+  .box18:hover{
+    flex: 2.5;
+  }
+
+  .contain6{
+    width: 589px;
+    padding: 5px;
+    background: transparent;
+    margin: 100px auto;
+    display: flex;
+    bottom: 1700px;
+    right: 50px;
+    position: relative;
+    float: left;
+  }
+  .lab7{
+    position: relative;
+    float: left;
+    bottom: 1190px;
+    left: 170px;
+  }
+  .box19{
+    width: 290px;
+    height: 240px;
+    background: url('./Asset/FuncLeft.png');
+    border-radius: 10px;
+    margin: 2px 10px;
+    overflow-x: hidden;
+    padding: 10px;
+    flex: 1;
+    transition: 1s;
+  }
+  .box19:hover{
+    flex: 2.5;
+  }
+  .box20{
+    width: 90px;
+    height: 240px;
+    background: url('./Asset/FuncMid.png');
+    border-radius: 10px;
+    margin: 2px 10px;
+    overflow-x: hidden;
+    padding: 10px;
+    flex: 1;
+    transition: 1s;
+  }
+  .box20:hover{
+    flex: 2.5;
+  }
+  .box21{
+    width: 90px;
+    height: 240px;
+    background: url('./Asset/FuncRight.png');
+    border-radius: 10px;
+    margin: 2px 10px;
+    overflow-x: hidden;
+    padding: 10px;
+    flex: 1;
+    transition: 1s;
+  }
+  .box21:hover{
+    flex: 2.5;
+  }
+
+  .contain7{
+    width: 589px;
+    padding: 5px;
+    background: transparent;
+    margin: 100px auto;
+    display: flex;
+    bottom: 2154px;
+    left: 80px;
+    position: relative;
+    float: right;
+  }
+  .lab8{
+    position: relative;
+    float: right;
+    /* left: 170px; */
+    bottom: 1645px;
+    right: 150px;
+  }
+  .box22{
+    background: url('./Asset/MedLeft.png');
+    border-radius: 10px;
+    margin: 2px 10px;
+    overflow-x: hidden;
+    padding: 10px;
+    flex: 1;
+    transition: 1s;
+  }
+  .box22:hover{
+    flex: 2.5;
+  }
+  .box23{
+    background: url('./Asset/MedMid.png');
+    border-radius: 10px;
+    margin: 2px 10px;
+    overflow-x: hidden;
+    padding: 10px;
+    flex: 1;
+    transition: 1s;
+  }
+  .box23:hover{
+    flex: 2.5;
+  }
+  .box24{
+    width: 90px;
+    height: 240px;
+    background: url('./Asset/MedRight.png');
+    border-radius: 10px;
+    margin: 2px 10px;
+    overflow-x: hidden;
+    padding: 10px;
+    flex: 1;
+    transition: 1s;
+  }
+  .box24:hover{
+    flex: 2.5;
+  }
+footer{
+    font-family: "Raleway";
+    font-size: 12px;
+    width: 100%;
+    /* position: absolute; */
+    bottom: 0;
+    background: linear-gradient(to bottom,#110EA1 ,#080752 );
+    color: #fff;
+    padding: 60px 0 30px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col{
+    flex-basis: 25%;
+    padding: 5px;
+    position: relative;
+}
+
+.contact-info{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.contact-info a{
+    color: white;
+    text-decoration: none;
+}
+
+.contact-info img{
+    margin-right: 10px;
+}
+
+.logo{
+    width: 80px;
+    margin-bottom: 30px;
+}
+
+.col h3{
+    width: fit-content;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid white;
+    margin: 20px auto;
+}
+
+.copyright{
+    margin-top: 10px;
+    text-align: center;
+}

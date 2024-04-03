@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Permit Form</title>
+    <link rel="stylesheet" href="permitstyle.css">
+</head>
+<body>
+    <header class="header">
+        <a href="introduction.html" class="logo">
+            <img src="./Asset/LogoWhite.png">
+        </a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="News.html">NEWS</a></li>
+                <li><a href="#" class="Arrow">
+                    FORMS  <img src="./Asset/ArrowDownWhite.png">
+                </a>
+                <ul class="dropdown">
+                    <li><a href="Report.html">Damage Report Form</a></li>
+                    <li><a href="Permit.html">Entry & Exit Form</a></li>
+                    <li><a href="Booking.html">Facility Booking Form</a></li>
+                </ul>
+            </li>
+                <li><a href="Contact.html">CONTACTS</a></li>
+                <li><a href="abouts.html">ABOUTS</a></li>
+                <li class="login">
+                    <div class="login2">
+                        <a href="Login.html">LOGIN</a>
+                        <a href="Profile.html"><img src="./Asset/LoginWhite.png"></a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="middle">Permit Form</div>
+    <form action="#">
+        <div class="container">
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn" onclick="leftClick()">Entry</button>
+                    <button type="button" class="toggle-btn1" onclick="rightClick()">Exit</button>
+                </div>
+            </div>
+            <div class="newimage">
+                <img src="./Asset/Permitnewimg.svg">
+            </div>
+            <div class="inputplace">
+                
+                Name
+            <div class="inputfield">
+                <div class="inputname">
+                    <input type="text" id="name" placeholder="Your Answer">
+                    <img src="./Asset/DeleteText.png">
+                </div>
+            </div>
+            Class
+            <select id="kelas" name="kelas" class="pilihkelas">
+                <option hidden>Class</option>
+                <option value="PPBP3">PPBP 3</option>
+                <option value="PPBP4">PPBP 4</option>
+                <option value="PPBP5">PPBP 5</option>
+                <option value="PPBP6">PPBP 6</option>
+                <option value="PPTI14">PPTI 14</option>
+                <option value="PPTI15">PPTI 15</option>
+                <option value="PPTI16">PPTI 16</option>
+                <option value="PPTI17">PPTI 17</option>
+                <option value="PPTI18">PPTI 18</option>
+                <option value="PPTI19">PPTI 19</option>
+            </select>
+            Input your reason
+            <div class="inputfield">
+                <div class="inputname">
+                    <input type="text" id="name" placeholder="Your Answer">
+                    <img src="./Asset/DeleteText.png">
+                </div>
+            </div>
+            <button type="submit" class="submit" id="submit">Submit</button>
+        </div>
+    </div>
+    </form>
+
+
+    <footer>
+        <div class="row">
+            <div class="col">
+                <img src="./Asset/BCALogo.png" class="logoFooter">
+            </div>
+            <div class="col">
+                <h3 class="judul">Rumah Talenta BCA</h3>
+                <p>Jl. Pakuan No.3, Sumur Batu,</p>
+                <p>Kec. Babakan Madang,</p>
+                <p>Kabupaten Bogor, Jawa Barat, 16810</p>
+            </div>
+            <div class="col">
+                <h3 class="judul">Contact Us</h3>
+                <div class="contact-info">
+                    <img src="./Asset/Telpon.png">
+                    <p>Halo RTB 1234567</p>
+                </div>
+                <div class="contact-info">
+                    <img src="./Asset/Mail.png">
+                    <p><a href="mailto:haloRTB@gmail.com" target="_blank">haloRTB@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="col">
+                <h3 class="judul">Social Media</h3>
+                <div class="contact-info">
+                    <img src="./Asset/Facebook.png">
+                    <p><a href="https://www.facebook.com/BankBCA/" target="_blank">RTB_BCA</a></p>
+                </div>
+                <div class="contact-info">
+                    <img src="./Asset/Instagram.png">
+                    <p><a href="https://www.instagram.com/rumahtalentabca/" target="_blank">@rumahtalentabca</a></p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Rumah Talenta BCA © 2024 - All Rights Reserved </p>
+    </footer>
+    <script src="permitscript.js"></script>
+</body>
+</html>
