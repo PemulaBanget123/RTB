@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+    <link rel="stylesheet" href="bookingstyle.css">
+</head>
+<body>
+    <header class="header">
+        <a href="introduction.html" class="logo">
+            <img src="./Asset/LogoWhite.png">
+        </a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="News.html">NEWS</a></li>
+                <li><a href="#" class="Arrow">
+                    FORMS  <img src="./Asset/ArrowDownWhite.png">
+                </a>
+                <ul class="dropdown">
+                    <li><a href="Report.html">Damage Report Form</a></li>
+                    <li><a href="Permit.html">Entry & Exit Form</a></li>
+                    <li><a href="Booking.html">Facility Booking Form</a></li>
+                </ul>
+            </li>
+                <li><a href="Contact.html">CONTACTS</a></li>
+                <li><a href="abouts.html">ABOUTS</a></li>
+                <li class="login">
+                    <div class="login2">
+                        <a href="Login.html" >LOGIN</a>
+                        <a href="Profile.html"><img src="./Asset/LoginWhite.png"></a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="middle">Facility Booking Form</div>
+    <form action="#">
+    <div class="carousel">
+        <div class="inside">
+            <img src="./Asset/Kom1.png">
+            <img src="./Asset/Kom2.png">
+            <img src="./Asset/Kom3.png">
+            <img src="./Asset/Cws.png">
+            <img src="./Asset/Dapur.png">
+            <img src="./Asset/Laundry.png">
+        </div>
+
+    </div>
+    <div class="container">
+            <label class="label">Name</label>
+            <div class="inputfield">
+                <div class="inputname">
+                    <input type="text" id="name" placeholder="Your Answer">
+                    <img src="./Asset/DeleteText.png">
+                </div>
+            </div>
+            <br><label class="label">Class</label>
+                    <select id="kelas" name="kelas" class="pilihkelas">
+                            <option hidden>Class</option>
+                            <option value="PPBP3">PPBP 3</option>
+                            <option value="PPBP4">PPBP 4</option>
+                            <option value="PPBP5">PPBP 5</option>
+                            <option value="PPBP6">PPBP 6</option>
+                            <option value="PPTI14">PPTI 14</option>
+                            <option value="PPTI15">PPTI 15</option>
+                            <option value="PPTI16">PPTI 16</option>
+                            <option value="PPTI17">PPTI 17</option>
+                            <option value="PPTI18">PPTI 18</option>
+                            <option value="PPTI19">PPTI 19</option>
+                        </select>
+                <br><label class="label">Facility</label>
+                <select id="Fasilitas" name="fasilitas" class="pilihfas">
+                    <option hidden>Choose Facility</option>
+                    <option value="CWS">CWS</option>
+                    <option value="Dapur">Kitchen</option>
+                    <option value="Komunal1">Communal 1</option>
+                    <option value="Komunal2">Communal 2</option>
+                    <option value="Komunal3">Communal 3</option>
+                    <option value="Teater">Theater</option>
+                    <option value="PPTI15">Laundry Room</option>
+                </select>
+                <br><label class="label">Choose Date</label><br>
+                <input type="date" id="dmy" name="dmy" class="dmy">
+
+                <br><br><label class="label">Choose Period</label>
+                <select id="waktu" name="waktu" class="waktu">
+                    <option hidden>Choose Period</option>
+                    <option value="0">00:00 - 01:00</option>
+                    <option value="1">01:00 - 02:00</option>
+                    <option value="2">02:00 - 03:00</option>
+                    <option value="3">03:00 - 04:00</option>
+                    <option value="4">04:00 - 05:00</option>
+                    <option value="5">05:00 - 06:00</option>
+                    <option value="6">06:00 - 07:00</option>
+                    <option value="7">07:00 - 08:00</option>
+                    <option value="8">08:00 - 09:00</option>
+                    <option value="9">09:00 - 10:00</option>
+                    <option value="10">10:00 - 11:00</option>
+                    <option value="11">11:00 - 12:00</option>
+                    <option value="12">12:00 - 13:00</option>
+                    <option value="13">13:00 - 14:00</option>
+                    <option value="14">14:00 - 15:00</option>
+                    <option value="15">15:00 - 16:00</option>
+                    <option value="16">16:00 - 17:00</option>
+                    <option value="17">17:00 - 18:00</option>
+                    <option value="18">18:00 - 19:00</option>
+                    <option value="19">19:00 - 20:00</option>
+                    <option value="20">20:00 - 21:00</option>
+                    <option value="21">21:00 - 22:00</option>
+                    <option value="22">22:00 - 23:00</option>
+                    <option value="23">23:00 - 00:00</option>
+                </select>
+                
+                <button type="submit" class="submit" id="submit">Submit</button>
+            </div>
+        </form>
+
+    <footer>
+        <div class="row">
+            <div class="col">
+                <img src="./Asset/BCALogo.png" class="logoFooter">
+            </div>
+            <div class="col">
+                <h3 class="judul">Rumah Talenta BCA</h3>
+                <p>Jl. Pakuan No.3, Sumur Batu,</p>
+                <p>Kec. Babakan Madang,</p>
+                <p>Kabupaten Bogor, Jawa Barat, 16810</p>
+            </div>
+            <div class="col">
+                <h3 class="judul">Contact Us</h3>
+                <div class="contact-info">
+                    <img src="./Asset/Telpon.png">
+                    <p>Halo RTB 1234567</p>
+                </div>
+                <div class="contact-info">
+                    <img src="./Asset/Mail.png">
+                    <p><a href="mailto:haloRTB@gmail.com" target="_blank">haloRTB@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="col">
+                <h3 class="judul">Social Media</h3>
+                <div class="contact-info">
+                    <img src="./Asset/Facebook.png">
+                    <p><a href="https://www.facebook.com/BankBCA/" target="_blank">RTB_BCA</a></p>
+                </div>
+                <div class="contact-info">
+                    <img src="./Asset/Instagram.png">
+                    <p><a href="https://www.instagram.com/rumahtalentabca/" target="_blank">@rumahtalentabca</a></p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Rumah Talenta BCA © 2024 - All Rights Reserved </p>
+    </footer>
+</body>
+</html>
