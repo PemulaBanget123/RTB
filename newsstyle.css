@@ -196,7 +196,6 @@ footer{
     left: 60px;
 }
 .containers{
-    max-width: 1012.67px;
     max-height: 1200px;
     display: flex;
     flex-direction: column;
