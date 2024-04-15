@@ -198,6 +198,8 @@ footer{
 .containers{
     max-width: 1012.67px;
     max-height: 1200px;
+    display: flex;
+    flex-direction: column;
 }
 .wrapper1{
     position: relative;
