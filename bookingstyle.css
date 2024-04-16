@@ -362,3 +362,136 @@ form{
     font-weight: bold;
     color:#080752;
 }
+.popup{
+    visibility: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.confirmbox{
+    position: relative;
+    width: 646px;
+    height: 420px;
+    margin-left: 350px;
+    bottom: 430px;
+}
+.bluebox{
+    border-top-left-radius: 90px;
+    border-top-right-radius: 90px;
+    background-color: #528FD6;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.confirmation{
+    text-align: center;
+    background-color: white;
+    height: 200px;
+    border-bottom-left-radius: 90px;
+    border-bottom-right-radius: 90px;
+}
+.confirmtext{
+    font-family: 'Montserrat';
+    font-size: 30px;
+    font-weight: bold;
+    color: #0C0A72;
+}
+.inputtext{
+    font-family: 'Montserrat';
+    font-size: 25px;
+    font-weight: normal;
+    color:#0C0A72;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    top: 30px;
+}
+.yes{
+    width: 120px;
+    height: 40px;
+    border-radius: 90px;
+    border: none;
+    cursor: pointer;
+    background-color: #0C8E48;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+.no{
+    width: 120px;
+    height: 40px;
+    border-radius: 90px;
+    border: none;
+    cursor: pointer;
+    background-color: #CB0606;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+.bookingform{
+    max-height: 500px;
+}
+.open-popup{
+    visibility: visible;
+}
+.popup2{
+    background-color: white;
+    width: 646px;
+    height: 420px;
+    position: relative;
+    bottom: 850px;
+    left: 350px;
+    border-radius: 90px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+}
+.imgcheck{
+    position: relative;
+    align-self: center;
+    margin-bottom: 30px;
+    bottom: 50px;
+}
+.thanks{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: #0C0A72;
+    position: relative;
+    bottom: 50px;
+}
+.added{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Montserrat';
+    font-weight: lighter;
+    color: #0C0A72;
+    position: relative;
+    bottom: 10px;
+}
+.ok{
+    width: 120px;
+    justify-self: center;
+    align-self: center;
+    height: 40px;
+    font-size: 25px;
+    border: none;
+    background-color: #0C0A72;
+    border-radius: 90px;
+    cursor: pointer;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    position: relative;
+    top: 30px;
+}
+.open-popup2{
+    visibility: visible;
+}
