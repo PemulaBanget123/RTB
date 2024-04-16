@@ -33,3 +33,12 @@ function closePopup3(){
     thirdbutton.style.filter = "blur(0)";
     popup3.classList.remove("open-popup3");
 }
+document.addEventListener('DOMContentLoaded', function() {
+    const guidesButton = document.getElementById('guidesButton');
+
+    if (guidesButton) {
+        guidesButton.addEventListener('click', function() {
+            window.location.href = 'News.html';
+        });
+    }
+});
