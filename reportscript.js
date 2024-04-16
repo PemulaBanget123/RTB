@@ -63,9 +63,7 @@ form.addEventListener("submit",function(e){
             popup2.classList.add("open-popup2");
             let okay = document.getElementById("ok");
             okay.addEventListener('click',function(){
-                container.style.filter = "blur(0)";
-                gambar.style.filter = "blur(0)";
-                popup2.classList.remove("open-popup2");
+                window.location.href = 'Profile.html';
             });
         });
     }
