@@ -35,21 +35,21 @@
     </header>
 
     <div class="middle">Reports & Complaints Form</div>
-    <form action="#">
-    <img class="image2" src="./Asset/NEWREPORT2.png">
-    <div class="container">
+    <form id="report-form" class="reportform">
+    <img class="image2" src="./Asset/NEWREPORT2.png" id="gambar">
+    <div class="container" id="container">
             <label class="label">Name</label>
             <div class="inputfield">
                 <div class="inputname">
                         <div class="inputname">
                             <input type="text" id="name" placeholder="Your Answer">
-                            <img src="./Asset/DeleteText.png">
+                            <img src="./Asset/DeleteText.png" id="deleteicon">
                         </div>
                 </div>
             </div>
             <br><label class="label">Class</label>
                     <select id="kelas" name="kelas" class="pilihkelas">
-                            <option hidden>Class</option>
+                            <option hidden value="">Class</option>
                             <option value="PPBP3">PPBP 3</option>
                             <option value="PPBP4">PPBP 4</option>
                             <option value="PPBP5">PPBP 5</option>
@@ -65,28 +65,49 @@
                 <div class="inputfield">
                     <div class="inputname">
                         <input type="text" id="lokasi" placeholder="Your Answer">
-                        <img src="./Asset/DeleteText.png">
+                        <img src="./Asset/DeleteText.png" id="deleteicon2">
                     </div>
                 </div>
                 <br><label class="label">Damaged Facility</label>
                 <div class="inputfield">
                     <div class="inputname">
                         <input type="text" id="fasilitas" placeholder="Your Answer">
-                        <img src="./Asset/DeleteText.png">
+                        <img src="./Asset/DeleteText.png" id="deleteicon3">
                     </div>
                 </div>
                 <br><label class="label">Complaint</label>
                 <div class="inputfield">
                     <div class="inputname">
                         <input type="text" id="keluhan" placeholder="Your Answer">
-                        <img src="./Asset/DeleteText.png">
+                        <img src="./Asset/DeleteText.png" id="deleteicon4">
                     </div>
                 </div>
                 
                 <button type="submit" class="submit" id="submit">Submit</button>
             </div>
+            <div class="popup" id="popup">
+                 <div class="confirmbox">
+                     <div class="bluebox">
+                         <img src="./Asset/QuestionMark.svg">
+                     </div>
+                     <div class="confirmation">
+                         <label class="confirmtext">Confirm</label><br><br>
+                         <label class="inputtext">Are you sure you want to report this?</label>
+                         <div class="buttons">
+                             <button type="button" id="yes" class="yes" onclick="openpop()">Yes</button>
+                             <button type="button" id="no" class="no" onclick="closePop()">No</button>
+                         </div>
+                     </div>
+     
+                 </div>
+            </div>
+            <div class="popup2" id="popup2">
+                <label class="imgcheck"><img src="./Asset/checklist.svg"></label>
+                <label class="thanks">Thank you for your confirmation</label>
+                <label class="added">It has been successfully added!</label>
+                <button type="button" id="ok" class="ok">OK</button>
+            </div>
         </form>
-        <!-- <img class="image2" src="GambarReport.png"> -->
 
 
     <footer>
@@ -126,5 +147,6 @@
         <hr>
         <p class="copyright">Rumah Talenta BCA © 2024 - All Rights Reserved </p>
     </footer>
+    <script src="reportscript.js"></script>
 </body>
 </html>
