@@ -19,8 +19,7 @@
             </div>
         </div>
         <div class="sign">Sign In</div>
-        <form>
-
+ <form id="loginform">
             <div class="inputfield">
                 <div class="inputname">
                     <input type="text" id="name" placeholder="Email or Phone Number">
@@ -29,11 +28,11 @@
             </div>
             <div class="inputfield2">
                 <div class="inputname">
-                    <input type="password" id="name" placeholder="Password">
+                    <input type="password" id="password" placeholder="Password">
                     <!-- <img src="./Asset/DeleteText.png"> -->
                 </div>
             </div>
-            <label class="forgot">Forgot the pasword?</label>
+            <label class="forgot" id="forgot">Forgot the pasword?</label>
             <button type="submit" class="submit" id="submit">
                 <img class="lock" src="./Asset/LockIcon.png">
                 <label class="TextLogin">
@@ -79,5 +78,6 @@
         <hr>
         <p class="copyright">Rumah Talenta BCA © 2024 - All Rights Reserved </p>
     </footer>
+    <script src="loginscript.js"></script>
 </body>
 </html>
