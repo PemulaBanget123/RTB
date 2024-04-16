@@ -1,42 +1,36 @@
-document.querySelectorAll(".carousel").forEach((carousel) => {
-    const items = carousel.querySelectorAll(".carousel__item");
-    const buttonsHtml = Array.from(items, () => {
-      return `<span class="carousel__button"></span>`;
-    });
-  
-    carousel.insertAdjacentHTML(
-      "beforeend",
-      `
-          <div class="carousel__nav">
-              ${buttonsHtml.join("")}
-          </div>
-      `
-    );
-  
-    const buttons = carousel.querySelectorAll(".carousel__button");
-  
-    buttons.forEach((button, i) => {
-      button.addEventListener("click", () => {
-    //     // un-select all the items
-        items.forEach((item) =>
-          item.classList.remove("carousel__item--selected")
-        );
-        buttons.forEach((button) =>
-          button.classList.remove("carousel__button--selected")
-        );
-  
-        items[i].classList.add("carousel__item--selected");
-        button.classList.add("carousel__button--selected");
-  
-        buttons.forEach((btn) => btn.classList.remove("carousel__button--selected"));
-        button.classList.add("carousel__button--selected");
-      });
-    });
-  
-    // items[0].style.opacity = 1; // Show first item initially
-    // buttons[0].classList.add("carousel__button--selected");
-    // Select the first item on page load
-    items[0].classList.add("carousel__item--selected");
-    buttons[0].classList.add("carousel__button--selected");
-  });
-  
+let slider = document.querySelector('.slider .list');
+let items = document.querySelectorAll('.slider .list .item');
+let next = document.getElementById('next');
+let prev = document.getElementById('prev');
+let dots = document.querySelectorAll('.slider .dots li');
+
+let lengthItems = items.length - 1;
+let active = 0;
+next.onclick = function(){
+    active = active + 1 <= lengthItems ? active + 1 : 0;
+    reloadSlider();
+}
+prev.onclick = function(){
+    active = active - 1 >= 0 ? active - 1 : lengthItems;
+    reloadSlider();
+}
+let refreshInterval = setInterval(()=> {next.click()}, 3000);
+function reloadSlider(){
+    slider.style.left = -items[active].offsetLeft + 'px';
+    let last_active_dot = document.querySelector('.slider .dots li.active');
+    last_active_dot.classList.remove('active');
+    dots[active].classList.add('active');
+
+    clearInterval(refreshInterval);
+    refreshInterval = setInterval(()=> {next.click()}, 3000);    
+}
+
+dots.forEach((li, key) => {
+    li.addEventListener('click', ()=>{
+         active = key;
+         reloadSlider();
+    })
+})
+window.onresize = function(event) {
+    reloadSlider();
+};
