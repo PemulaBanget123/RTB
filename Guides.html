@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Permit Form</title>
+    <link rel="stylesheet" href="guidestyle.css">
+</head>
+<body>
+    <header class="header">
+        <a href="introduction.html" class="logo">
+            <img src="./Asset/LogoWhite.png">
+        </a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="News.html">NEWS</a></li>
+                <li><a href="#" class="Arrow">
+                    FORMS  <img src="./Asset/ArrowDownWhite.png">
+                </a>
+                <ul class="dropdown">
+                    <li><a href="Report.html">Damage Report Form</a></li>
+                    <li><a href="Permit.html">Entry & Exit Form</a></li>
+                    <li><a href="index.html">Facility Booking Form</a></li>
+                </ul>
+            </li>
+                <li><a href="Contact.html">CONTACTS</a></li>
+                <li><a href="abouts.html">ABOUTS</a></li>
+                <li class="login">
+                    <div class="login2">
+                        <a href="Login.html">LOGIN</a>
+                        <a href="Profile.html"><img src="./Asset/LoginWhite.png"></a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="formbox">
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick="leftClick()">Guides</button>
+            <button type="button" class="toggle-btn1" onclick="rightClick()">Rules</button>
+        </div>
+        <div class="imagepermit">
+            <img src="./Asset/Guidesimg.svg" id="image1">
+        </div>
+        <section class="guides" id="guides">
+            <label class="cluster">
+                <label class="cluster1"><img src="./Asset/cluster.svg"></label>
+                <label class="cluster2">CLUSTER</label>
+            </label>
+            <div class="isicluster">
+                <label class="do1">
+                    <label class="insidedo">
+                        <label class="doimage"><img src="./Asset/checkguide.svg"></label>
+                        <label class="dotext">Do's</label>
+                    </label>
+                    <label class="insidedont">
+                        <label class="dontimage"><img src="./Asset/xguide.svg"></label>
+                        <label class="donttext">Dont's</label>
+                    </label>
+                </label>
+                <div class="textcluster">
+                    <div class="isi1">
+                        <ol>
+                            <li>Responsible for the cleanliness of rooms and balconies.</li>
+                            <li>Use of sockets only for laptops, cellphone chargers, hairdryer, straightener.</li>
+                            <li>Follow the rules for using the bathroom/toilet accordingly sticker on the back of the door. </li>
+                        </ol>
+                    </div>
+                    <div class="garis"></div>
+                    <div class="isi2">
+                        <ol>
+                            <li>Cooking in the room, in the cluster or in the hallway (corridor).</li>
+                            <li>Leave leftover food or dirty cutlery in the cluster.</li>
+                            <li>Puts items on top of the locker.</li>
+                        </ol>
+                        <div class="isigambar">
+                            <img src="./Asset/pot.svg">
+                            <img src="./Asset/garpu.svg">
+                            <img src="./Asset/wash.svg">
+                            <img src="./Asset/toilet.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br><br><br><br><br>
+            <label class="cluster">
+                <label class="cluster1"><img src="./Asset/REFRIG.svg"></label>
+                <label class="cluster2">REFRIGERATOR</label>
+            </label>
+            <div class="isicluster">
+                <label class="do1">
+                    <label class="insidedo">
+                        <label class="doimage"><img src="./Asset/checkguide.svg"></label>
+                        <label class="dotext">Do's</label>
+                    </label>
+                    <label class="insidedont">
+                        <label class="dontimage"><img src="./Asset/xguide.svg"></label>
+                        <label class="donttext">Dont's</label>
+                    </label>
+                </label>
+                <div class="textcluster">
+                    <div class="isi1">
+                        <ol >
+                            <li>Use a refrigerator according to the room floor. For example: refrigerator at LG used by students rooms on floor G.</li>
+                            <li>Only for storing food and drinks (maximum 2 item / person).</li>
+                            <li>Use a container box/food box that is adjusted in size with contents, maximum size 1000 ml.</li>
+                        </ol>
+                    </div>
+                    <div class="garis"></div>
+                    <div class="isi2">
+                        <ol>
+                            <li>Using paper bags, cardboard, plastic bags “crackle”, styrofoam, tote bag.</li>
+                            <li>Taking other people’s food or drinks.</li>
+                            <li>Forcing things in when the refrigerator is already overload capacity.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <br><br><br><br><br>
+            <label class="cluster">
+                <label class="cluster1"><img src="./Asset/washmachine.svg"></label>
+                <label class="cluster2">WASH & IRON DRY</label>
+                <label class="cluster1"><img src="./Asset/iron.svg"></label>
+            </label>
+            <div class="isicluster">
+                <label class="do1">
+                    <label class="insidedo">
+                        <label class="doimage"><img src="./Asset/checkguide.svg"></label>
+                        <label class="dotext">Do's</label>
+                    </label>
+                    <label class="insidedont">
+                        <label class="dontimage"><img src="./Asset/xguide.svg"></label>
+                        <label class="donttext">Dont's</label>
+                    </label>
+                </label>
+                <div class="textcluster">
+                    <div class="isi1">
+                        <ol >
+                            <li>Must chat with PIC for washing machine booking purposes, maximum book 1 day before use.</li>
+                            <li>The maximum duration for booking a washing machine is 2 hours.</li>
+                            <li>Book a washing machine by including the washing machine number that you want to use. </li>
+                        </ol>
+                    </div>
+                    <div class="garis"></div>
+                    <div class="isi2">
+                        <ol>
+                            <li>Dispose of filter dirt into the drain.</li>
+                            <li>Does not leave any identity during the washing process.</li>
+                            <li>Exceeds the usage time limit (> 2 hours).</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="rules" id="rules">
+            <h2>General</h2>
+            <ul>
+                <li>Consumption of alcoholic beverages, gambling, fighting, smoking and immoral acts are strictly prohibited</li>
+                <li>No dating activities are allowed</li>
+                <li>Each student is responsible for the use of their access card</li>
+                <li>Must follow the rules (provisions) of RTB Door Open-Close Hours, namely closing the door at 21.00 WIB (Monday-Thursday) and 22.00 WIB (Friday-Sunday & Holidays), open the door at 05.00 WIB</li>
+                <li>Dispose of waste in its proper place, separating organic and inorganic waste</li>
+                <li>Not feeding wild animals</li>
+                <li>Do not enter the floor (area) of the opposite sex</li>
+                <li>The time limit for using public facilities is 23.00 pm for weekdays and 24.00 pm for weekends. It will be allowed to exceed the time limit if it is for assignments/studies.</li>
+            </ul>
+            <h2>Permission to enter and exit after gate closing time</h2>
+            <ul>
+                <li>Family Grief</li>
+                <li>Medical Treatment/Sickness</li>
+                <li>Changes in airplane or train schedules, provided that students submit a request for permission accompanied by evidence to the dormitory management H-1 or at the time of the schedule change (not after arriving at RTB).</li>
+                <li>BCA, DPP / BLI and other events known and authorized by the PIC or DPP</li>
+            </ul>
+            <h2>PPA/PPBP/PPTI Student Visits (Non-Residents)</h2>
+            <ul>
+                <li>Allowed with a time range of 08:00 - 21:00 WIB </li>
+                <li>Meetings are allowed only in the Multipurpose Room Family or Friends Visits</li>
+            </ul>
+            <h2>Family or Friends Visits</h2>
+            <ul>
+                <li>Allowed only on Saturdays / Sundays / Holidays</li>
+                <li>Meetings are allowed only on the Function Room Terrace (Recommended for outside RTB)</li>
+            </ul>
+        </div>
+        </section>
+   </div>
+
+
+    <footer id="footer">
+        <div class="row">
+            <div class="col">
+                <img src="./Asset/BCALogo.png" class="logoFooter">
+            </div>
+            <div class="col">
+                <h3 class="judul">Rumah Talenta BCA</h3>
+                <p>Jl. Pakuan No.3, Sumur Batu,</p>
+                <p>Kec. Babakan Madang,</p>
+                <p>Kabupaten Bogor, Jawa Barat, 16810</p>
+            </div>
+            <div class="col">
+                <h3 class="judul">Contact Us</h3>
+                <div class="contact-info">
+                    <img src="./Asset/Telpon.png">
+                    <p>Halo RTB 1234567</p>
+                </div>
+                <div class="contact-info">
+                    <img src="./Asset/Mail.png">
+                    <p><a href="mailto:haloRTB@gmail.com" target="_blank">haloRTB@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="col">
+                <h3 class="judul">Social Media</h3>
+                <div class="contact-info">
+                    <img src="./Asset/Facebook.png">
+                    <p><a href="https://www.facebook.com/BankBCA/" target="_blank">RTB_BCA</a></p>
+                </div>
+                <div class="contact-info">
+                    <img src="./Asset/Instagram.png">
+                    <p><a href="https://www.instagram.com/rumahtalentabca/" target="_blank">@rumahtalentabca</a></p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Rumah Talenta BCA © 2024 - All Rights Reserved </p>
+    </footer>
+    <script src="guidescript.js"></script>
+</body>
+</html>
