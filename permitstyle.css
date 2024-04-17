@@ -121,7 +121,7 @@ footer{
     color: #fff;
     padding: 60px 0 30px;
     line-height: 20px;
-    margin-top: 15%;
+    margin-top: 5%;
 }
 
 .row{
@@ -178,12 +178,24 @@ footer{
 /* ISI */
 form{
     font-family:"Montserrat";
-    width: 100%;
+    width: 100px;
     margin: auto;
-    margin-top: 150px;
+    /* margin-top: 100px; */
     /* margin-left: 5%; */
     /* padding-left: 100px; */
-    /* margin-left: 10px; */
+    /* margin-right: 60px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    position: relative;
+    bottom: 200px;
+    left: 650px;
+    visibility: hidden;
+}
+.open-form{
+    visibility: visible;
+    top: -50px;
 }
 .middle{
     font-family: 'Montserrat';
@@ -196,17 +208,12 @@ form{
     font-size: 26px;
 }
 .container{
+    display: flex;
+    flex-direction: row;
     position: relative;
-    max-width: 100%;
     margin-top: 50px;
-    margin-left:190px ;
     font-size: 20px;
     font-family: 'Montserrat';
-    /* margin: 10px 20px 30px 40px; */
-    /* left: 90px; */
-    /* margin-right: 0; */
-    /* left: 100px; */
-
 }
 .inputname>input{
     width: 220px;
@@ -219,7 +226,7 @@ form{
 .inputfield{
     position: relative;
     display: flex;
-    width: 25%;
+    width: 270px;
     border-radius: 5px;
     background: white;
     border: solid 2px;
@@ -229,12 +236,15 @@ form{
     position: relative;
     top:3px;
     left:10px;
+    cursor: pointer;
     /* margin: auto; */
 }
 .pilihkelas{
     position: relative;
     display: flex;
-    width: 15%;
+    flex-direction: row;
+    width: 90px;
+    min-width: 90px;
     max-height: 100px;
     height: 30px;
     /* padding: 1px; */
@@ -261,10 +271,15 @@ form{
     width: 200px;
     margin: 15px auto;
     position: relative;
+    display: flex;
+    flex-direction: row;
+    top: 100px;
+    margin-top: 50px;
+    justify-content: center;
     border: none;
     border-radius: 30px;
-    background: white;
-    right: 90px;
+    background: #141286;
+    /* right: 90px; */
 }
 .toggle-btn{
     font-family: 'Montserrat';
@@ -274,9 +289,13 @@ form{
     background: transparent;
     border: 0;
     outline: none;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
     position: relative;
     text-align: center;
     border-radius: 30px;
+    color: black;
 }
 .toggle-btn1{
     font-family: 'Montserrat';
@@ -287,6 +306,8 @@ form{
     border: 0;
     outline: none;
     position: relative;
+    display: flex;
+    flex-direction: row;
     text-align: center;
     border-radius: 30px;
 }
@@ -296,9 +317,19 @@ form{
     position: absolute;
     width: 90px;
     height: 100%;
-    background-color: aqua;
+    background-color: #84DAFF;
     border-radius: 30px;
     transition: .5s;
+}
+.formbox{
+    display: flex;
+    flex-direction: column;
+    max-height: 600px;
+}
+.imagepermit{
+    position: relative;
+    align-self: center;
+    margin-top: 10%;
 }
 .newimage{
     position: relative;
@@ -320,4 +351,145 @@ form{
     /* padding: 1px; */
     border-radius: 5px;
     border: solid 2px;
+}
+
+.popup{
+    visibility: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-height: 600px;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+    align-items: center;
+    /* bottom: 200px; */
+    right: 700px;
+}
+.confirmbox{
+    position: relative;
+    width: 646px;
+    /* height: 420px; */
+    /* margin-left: 400px; */
+    /* bottom: 430px; */
+}
+.bluebox{
+    border-top-left-radius: 90px;
+    border-top-right-radius: 90px;
+    background-color: #528FD6;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.confirmation{
+    text-align: center;
+    background-color: white;
+    height: 200px;
+    border-bottom-left-radius: 90px;
+    border-bottom-right-radius: 90px;
+}
+.confirmtext{
+    font-family: 'Montserrat';
+    font-size: 30px;
+    font-weight: bold;
+    color: #0C0A72;
+}
+.inputtext{
+    font-family: 'Montserrat';
+    font-size: 25px;
+    font-weight: normal;
+    color:#0C0A72;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    top: 30px;
+}
+.yes{
+    width: 120px;
+    height: 40px;
+    border-radius: 90px;
+    border: none;
+    cursor: pointer;
+    background-color: #0C8E48;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+.no{
+    width: 120px;
+    height: 40px;
+    border-radius: 90px;
+    border: none;
+    cursor: pointer;
+    background-color: #CB0606;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+.open-popup{
+    visibility: visible;
+}
+.popup2{
+    background-color: white;
+    /* width: 646px; */
+    min-width: 646px;
+    height: 420px;
+    position: relative;
+    /* bottom: 200px; */
+    right: 1350px;
+    /* left: 350px; */
+    /* margin-left: 310px; */
+    border-radius: 90px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+}
+.imgcheck{
+    position: relative;
+    align-self: center;
+    margin-bottom: 30px;
+    bottom: 50px;
+}
+.thanks{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: #0C0A72;
+    position: relative;
+    bottom: 50px;
+}
+.added{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Montserrat';
+    font-weight: lighter;
+    color: #0C0A72;
+    position: relative;
+    bottom: 10px;
+}
+.ok{
+    width: 120px;
+    justify-self: center;
+    align-self: center;
+    height: 40px;
+    font-size: 25px;
+    border: none;
+    background-color: #0C0A72;
+    border-radius: 90px;
+    cursor: pointer;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    position: relative;
+    top: 30px;
+}
+.open-popup2{
+    visibility: visible;
 }
