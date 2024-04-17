@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (guidesButton) {
         guidesButton.addEventListener('click', function() {
-            window.location.href = 'News.html';
+            window.location.href = 'Guides.html';
         });
     }
 });
