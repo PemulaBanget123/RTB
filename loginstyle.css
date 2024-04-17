@@ -23,14 +23,15 @@ footer{
     font-size: 12px;
     width: 100%;
     position: absolute;
-    /* top: 100%; */
-    bottom: 0%;
+    min-height: 230px;
+    top: 800px;
+    /* position: relative; */
+    bottom: 0;
+    left: 0;
     background: linear-gradient(to bottom,#110EA1 ,#080752 );
     color: #fff;
     padding: 60px 0 30px;
     line-height: 20px;
-    /* margin-top: 10%; */
-    /* display: none; */
 }
 
 .row{
@@ -191,6 +192,10 @@ footer{
     position: relative;
     text-align: center;
     top: 130px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    right: 120px;
     font-size: 25px;
 }
 .forgot{
