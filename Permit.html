@@ -35,31 +35,33 @@
         </nav>
     </header>
 
-    <div class="middle">Permit Form</div>
-    <form action="#">
-        <div class="container">
-            <div class="form-box">
-                <div class="button-box">
-                    <div id="btn"></div>
-                    <button type="button" class="toggle-btn" onclick="leftClick()">Entry</button>
-                    <button type="button" class="toggle-btn1" onclick="rightClick()">Exit</button>
+     <div class="middle">Permit Form</div>
+    <div class="formbox">
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick="leftClick()">Entry</button>
+            <button type="button" class="toggle-btn1" onclick="rightClick()">Exit</button>
+        </div>
+        <div class="imagepermit">
+            <img src="./Asset/Permitnewimg.svg" id="image1">
+        </div>
+        <form id="permitform">
+            <div class="container" id="container2">
+                <div class="newimage">
+                    <img src="./Asset/Permitnewimg.svg" id="image2">
                 </div>
-            </div>
-            <div class="newimage">
-                <img src="./Asset/Permitnewimg.svg">
-            </div>
-            <div class="inputplace">
-                
+                <div class="inputplace">
+                    
                 Name
             <div class="inputfield">
                 <div class="inputname">
                     <input type="text" id="name" placeholder="Your Answer">
-                    <img src="./Asset/DeleteText.png">
+                    <img src="./Asset/DeleteText.png" id="deleteicon">
                 </div>
             </div>
             Class
             <select id="kelas" name="kelas" class="pilihkelas">
-                <option hidden>Class</option>
+                <option hidden value="">Class</option>
                 <option value="PPBP3">PPBP 3</option>
                 <option value="PPBP4">PPBP 4</option>
                 <option value="PPBP5">PPBP 5</option>
@@ -74,14 +76,36 @@
             Input your reason
             <div class="inputfield">
                 <div class="inputname">
-                    <input type="text" id="name" placeholder="Your Answer">
-                    <img src="./Asset/DeleteText.png">
+                    <input type="text" id="reason" placeholder="Your Answer">
+                    <img src="./Asset/DeleteText.png" id="deleteicon1">
                 </div>
             </div>
             <button type="submit" class="submit" id="submit">Submit</button>
         </div>
     </div>
+    <div class="popup" id="popup">
+        <div class="confirmbox">
+            <div class="bluebox">
+                <img src="./Asset/QuestionMark.svg">
+            </div>
+            <div class="confirmation">
+                <label class="confirmtext">Confirm</label><br><br>
+                <label class="inputtext">Are you sure you want to book this facility?</label>
+                <div class="buttons">
+                    <button type="button" id="yes" class="yes" onclick="openpop()">Yes</button>
+                    <button type="button" id="no" class="no" onclick="closePop()">No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup2" id="popup2">
+        <label class="imgcheck"><img src="./Asset/checklist.svg"></label>
+        <label class="thanks">Thank you for your confirmation</label>
+        <label class="added">It has been successfully added!</label>
+        <button type="button" id="ok" class="ok">OK</button>
     </form>
+</div>
+   </div>
 
 
     <footer>
