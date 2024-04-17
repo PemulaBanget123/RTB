@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
-/* @import url('https://fonts.googleapis.com/css?family=Montserrat'); */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
@@ -197,6 +196,7 @@
 
 .Join {
     text-align: center;
+    margin-top: 20%;
   }
   
 
