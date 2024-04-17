@@ -10,7 +10,7 @@
     max-height: 900px;
 }
 body{
-    max-width: 100%;
+/*     max-width: 100%; */
     min-height: 100%;
     background: url('./Asset/Background.png') no-repeat;
     background-size: cover;
@@ -425,4 +425,165 @@ button{
 .opsi3:hover{
     transition: all .3s ease-in;
     background: rgb(22, 181, 22)
+}
+.deletebook{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+    bottom: 580px;
+    /* left: 960px; */
+}
+.deletebook>img{
+    width: 30px;
+    position: relative;
+    left: 960px;
+}
+.del{
+    position: relative;
+    top: 45px;
+}
+
+.popup4{
+    visibility: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-height: 600px;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+    align-items: center;
+    /* bottom: 200px; */
+    /* right: 700px; */
+    z-index: 202;
+    bottom: 650px;
+}
+.confirmbox{
+    position: relative;
+    width: 646px;
+    /* height: 420px; */
+    /* margin-left: 400px; */
+    /* bottom: 430px; */
+}
+.bluebox{
+    border-top-left-radius: 90px;
+    border-top-right-radius: 90px;
+    background-color: #528FD6;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.confirmation{
+    text-align: center;
+    background-color: white;
+    height: 200px;
+    border-bottom-left-radius: 90px;
+    border-bottom-right-radius: 90px;
+}
+.confirmtext{
+    font-family: 'Montserrat';
+    font-size: 30px;
+    font-weight: bold;
+    color: #0C0A72;
+}
+.inputtext{
+    font-family: 'Montserrat';
+    font-size: 25px;
+    font-weight: normal;
+    color:#0C0A72;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    bottom: 150px;
+}
+.yes{
+    width: 120px;
+    height: 40px;
+    border-radius: 90px;
+    border: none;
+    cursor: pointer;
+    background-color: #0C8E48;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+.no{
+    width: 120px;
+    height: 40px;
+    border-radius: 90px;
+    border: none;
+    cursor: pointer;
+    background-color: #CB0606;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+.open-popup4{
+    visibility: visible;
+}
+.popup5{
+    background-color: white;
+    /* width: 646px; */
+    min-width: 646px;
+    height: 420px;
+    position: relative;
+    bottom: 1000px;
+    /* right: 1350px; */
+    left: 350px;
+    /* margin-left: 310px; */
+    border-radius: 90px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    z-index: 202;
+    visibility: hidden;
+}
+.imgcheck{
+    position: relative;
+    align-self: center;
+    margin-bottom: 30px;
+    bottom: 50px;
+}
+.thanks{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: #0C0A72;
+    position: relative;
+    bottom: 50px;
+}
+.added{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Montserrat';
+    font-weight: lighter;
+    color: #0C0A72;
+    position: relative;
+    bottom: 10px;
+}
+.ok{
+    width: 120px;
+    justify-self: center;
+    align-self: center;
+    height: 40px;
+    font-size: 25px;
+    border: none;
+    background-color: #0C0A72;
+    border-radius: 90px;
+    cursor: pointer;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    position: relative;
+    top: 30px;
+}
+.open-popup5{
+    visibility: visible;
 }
