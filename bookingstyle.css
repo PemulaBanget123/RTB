@@ -231,6 +231,7 @@ form{
     top:3px;
     left:10px;
     /* margin: auto; */
+    cursor:pointer;
 }
 .pilihkelas{
     font-family: 'Montserrat';
