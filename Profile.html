@@ -37,12 +37,13 @@
 
 
     <div class="middle" id="middle2">Profile</div>
-     <div class="containmid" id="mid">
+    <div class="containmid" id="mid">
             <div class="profileimg" id="profileimg">
                 <img src="./Asset/ProfileImg.png">
             </div>
             <div class="profilisi">
-                <div class="isiprofile">
+                <!-- <img src="./Asset/ProfileMarcel.svg"> -->
+                <div class="isiprofile" id="isiprofile">
                     <div class="name1">
                         Name<label> : Marchel</label>
                     </div>
@@ -66,8 +67,8 @@
                         <button id="guidesButton" class="button">Guides & Rules</button>
                     </div>
                 </div>
-                <label class="title1">View List :</label>
-                <div class="ViewList">
+                <label class="title1" id="title1">View List :</label>
+                <div class="ViewList" id="ViewList">
                     <div class="listview">
                         <button type="button" class="opsi1" onclick="openPopup()">View Booking List</button>
                     </div>
@@ -81,6 +82,15 @@
                 <div class="popup1" id="popup1">
                     <img class="cancel" src="./Asset/Xcirc.svg" onclick="closePopup()">
                     <img src="./Asset/ViewBook2.svg">
+                    <div class="deletebook">
+                        <img src="./Asset/deleteprofile.svg" onclick="deletepop()">
+                        <img src="./Asset/deleteprofile.svg" onclick="deletepop()">
+                        <img src="./Asset/deleteprofile.svg" onclick="deletepop()">
+                        <img src="./Asset/deleteprofile.svg" class="del" onclick="deletepop()">
+                        <img src="./Asset/deleteprofile.svg" class="del" onclick="deletepop()">
+                        <img src="./Asset/deleteprofile.svg" class="del" onclick="deletepop()">
+                        <img src="./Asset/deleteprofile.svg" class="del" onclick="deletepop()">
+                    </div>
                 </div>
                 <div class="popup2" id="popup2">
                     <img class="cancel1" src="./Asset/Xcirc.svg" onclick="closePopup1()">
@@ -91,7 +101,29 @@
                     <img src="./Asset/ReportView2.svg">  
                 </div>
             </div>
+            <div class="popup4" id="popup4">
+                <div class="confirmbox">
+                    <div class="bluebox">
+                        <img src="./Asset/QuestionMark.svg">
+                    </div>
+                    <div class="confirmation">
+                        <label class="confirmtext">Confirm</label><br><br>
+                        <label class="inputtext">Are you sure you want to book this facility?</label>
+                        <div class="buttons">
+                            <button type="button" id="yes" class="yes">Yes</button>
+                            <button type="button" id="no" class="no">No</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup5" id="popup5">
+                <label class="imgcheck"><img src="./Asset/checklist.svg"></label>
+                <label class="thanks">Thank you for your confirmation</label>
+                <label class="added">It has been successfully added!</label>
+                <button type="button" id="ok" class="ok">OK</button>
+            </div>
         </div>
+
     <footer>
         <div class="row">
             <div class="col">
