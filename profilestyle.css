@@ -10,7 +10,8 @@
     max-height: 900px;
 }
 body{
-/*     max-width: 100%; */
+    /* max-width: 100%; */
+    /* min-width: 100px; */
     min-height: 100%;
     background: url('./Asset/Background.png') no-repeat;
     background-size: cover;
@@ -22,15 +23,18 @@ body{
 /* NAVBAR CSS */
 .header{
     position:absolute;
-    /* margin: auto; */
+    margin: auto;
     width:100%;
     height: 100px;
+    /* padding: 1.3rem 10%; */
+    /* padding-right: 200px; */
     background: linear-gradient(to bottom,#110EA1 ,#080752 );
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
     color: white;
+    font-weight: bold;
     /* margin-bottom: 100%; */
 }
 .logo{
@@ -39,7 +43,9 @@ body{
     left:10px;
 }
 .navbar{
+    /* padding-right:500px; */
     width: 100%;
+    /* right:950px; */
     justify-content: center;
     align-items: center;
     position: relative;
@@ -57,7 +63,7 @@ body{
     display: block;
     /* padding:20px 25px; */
     padding-left: 40px;
-    color: white;
+    color: rgb(163, 163, 163);
     text-decoration: none;
     text-align: center;
     font-size:18px;
@@ -78,9 +84,20 @@ body{
     color: #0C0A72;
     text-decoration: none;
 }
+.dropdown .ayam{
+    border-bottom: 1px solid;
+    margin-bottom: 5px;
+    list-style: none;
+
+}
+.dropdown .ayam li a{
+    text-decoration: none;
+    color: #0C0A72;
+}
 .navbar ul li a:hover{
     /* background: black; */
-    color: black;
+    /* opacity: 10%; */
+    color: rgb(255, 255, 255);
     transition: all 0.3s ease-in;
 }
 .navbar .Arrow:hover img{
@@ -97,6 +114,11 @@ body{
     text-decoration: none;
     transition: none;
     opacity: 80%;
+    border-bottom: 1px solid;
+}
+.navbar ul li ul.dropdown .ayam li a:hover, .navbar ul li ul.dropdown li a:hover{
+    transition: all .3s ease-in;
+    color: black;
 }
 .login{
     /* margin: auto; */
@@ -108,10 +130,17 @@ body{
     margin-right: 5px;
     font-size: 18px;
     bottom: 8px;
+    margin-right: 50px;
 }
 .login2>a{
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: rgb(163, 163, 163);
+  /* margin-left: 20px; */
+  margin: 10px;
+}
+.login img:hover{
+    transition: all .3s ease-in;
+    opacity: 100%;
 }
 
 /* FOOTER CSS */
