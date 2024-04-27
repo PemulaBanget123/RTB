@@ -9,8 +9,9 @@
     font-weight: bold;
 }
 body{
-    max-width: 100%;
-    min-height: 100%;
+    /* max-width: 100%;
+    height:auto; */
+    /* min-height: 100%; */
     background: url('./Asset/Background.png') no-repeat;
     background-size: cover;
     background-position: center;
@@ -32,6 +33,7 @@ body{
     align-items: center;
     z-index: 100;
     color: white;
+    font-weight: bold;
     /* margin-bottom: 100%; */
 }
 .logo{
@@ -60,7 +62,7 @@ body{
     display: block;
     /* padding:20px 25px; */
     padding-left: 40px;
-    color: white;
+    color: rgb(163, 163, 163);
     text-decoration: none;
     text-align: center;
     font-size:18px;
@@ -81,9 +83,23 @@ body{
     color: #0C0A72;
     text-decoration: none;
 }
+.dropdown .ayam{
+    border-bottom: 1px solid;
+    margin-bottom: 5px;
+    list-style: none;
+
+}
+.dropdown .ayam li a{
+    text-decoration: none;
+    color: #0C0A72;
+}
+.navbar .Arrow{
+    color: white;
+}
 .navbar ul li a:hover{
     /* background: black; */
-    color: black;
+    /* opacity: 10%; */
+    color: rgb(255, 255, 255);
     transition: all 0.3s ease-in;
 }
 .navbar .Arrow:hover img{
@@ -100,6 +116,7 @@ body{
     text-decoration: none;
     transition: none;
     opacity: 80%;
+    border-bottom: 1px solid;
 }
 .login{
     /* margin: auto; */
@@ -111,10 +128,24 @@ body{
     margin-right: 5px;
     font-size: 18px;
     bottom: 8px;
+    margin-right: 50px;
 }
 .login2>a{
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: rgb(163, 163, 163);
+  /* margin-left: 20px; */
+  margin: 10px;
+}
+.login img{
+    opacity: 50%;
+}
+.login img:hover{
+    transition: all .3s ease-in;
+    opacity: 100%;
+}
+.navbar ul li ul.dropdown .ayam li a:hover, .navbar ul li ul.dropdown li a:hover, .navbar ul li ul.dropdown li a.active{
+    transition: all .3s ease-in;
+    color: black;
 }
 
 /* FOOTER CSS */
@@ -230,8 +261,8 @@ form{
     position: relative;
     top:3px;
     left:10px;
+    cursor: pointer;
     /* margin: auto; */
-    cursor:pointer;
 }
 .pilihkelas{
     font-family: 'Montserrat';
