@@ -103,6 +103,10 @@
     opacity: 80%;
     border-bottom: 1px solid;
 }
+.navbar ul li ul.dropdown .ayam li a:hover, .navbar ul li ul.dropdown li a:hover{
+    transition: all .3s ease-in;
+    color: black;
+}
 .login{
     /* margin: auto; */
     /* padding: auto; */
