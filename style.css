@@ -71,6 +71,16 @@
     color: #0C0A72;
     text-decoration: none;
 }
+.dropdown .ayam{
+    border-bottom: 1px solid;
+    margin-bottom: 5px;
+    list-style: none;
+
+}
+.dropdown .ayam li a{
+    text-decoration: none;
+    color: #0C0A72;
+}
 .navbar ul li a:hover{
     /* background: black; */
     color: black;
@@ -90,6 +100,7 @@
     text-decoration: none;
     transition: none;
     opacity: 80%;
+    border-bottom: 1px solid;
 }
 .login{
     /* margin: auto; */
@@ -101,10 +112,13 @@
     margin-right: 5px;
     font-size: 18px;
     bottom: 8px;
+    margin-right: 50px;
 }
 .login2>a{
   text-decoration: none;
   color: white;
+  /* margin-left: 20px; */
+  margin: 10px;
 }
 /*ISI  */
 body{
