@@ -3,6 +3,7 @@ let form = document.getElementById("permitform");
 let image1 = document.getElementById("image1");
 let toggle = document.getElementById("toggle");
 let toggle1 = document.getElementById("toggle1");
+let middle = document.getElementById("middle");
 function leftClick(){
     btn.style.left ='0'
     form.classList.add("open-form");
@@ -43,6 +44,7 @@ form.addEventListener("submit",function(e){
         let popup = document.getElementById("popup")
         let container = document.getElementById("container2")
         container.style.filter = "blur(10px)";
+        middle.style.filter = "blur(10px)";
 
         popup.classList.add("open-popup");
         let noclick = document.getElementById("no")
@@ -50,6 +52,7 @@ form.addEventListener("submit",function(e){
 
         noclick.addEventListener('click', function(){
             container.style.filter = "blur(0)";
+            middle.style.filter = "blur(0)";
             popup.classList.remove("open-popup");
         });
         
