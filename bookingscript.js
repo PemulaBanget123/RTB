@@ -5,6 +5,7 @@ let kelas = document.getElementById("kelas");
 let fasilitas = document.getElementById("Fasilitas");
 let dmy = document.getElementById("dmy");
 let waktu = document.getElementById("waktu");
+let middle = document.getElementById("middle");
 
 trigger.addEventListener('click', function() {
     name.value = ''; // Clear the input field
@@ -30,6 +31,7 @@ form.addEventListener("submit",function(e){
         let popup = document.getElementById("popup")
         let gambar = document.getElementById("carousel")
 
+        middle.style.filter = "blur(10px)";
         container.style.filter = "blur(10px)";
         gambar.style.filter ="blur(10px)";
 
@@ -40,6 +42,7 @@ form.addEventListener("submit",function(e){
         noclick.addEventListener('click', function(){
             container.style.filter = "blur(0)";
             gambar.style.filter = "blur(0)";
+            middle.style.filter = "blur(0)";
             popup.classList.remove("open-popup");
         });
         
