@@ -416,6 +416,7 @@ form{
     border-top-right-radius: 90px;
     background-color: #528FD6;
     display: flex;
+    padding: 20px;
     flex-direction: row;
     justify-content: center;
 }
