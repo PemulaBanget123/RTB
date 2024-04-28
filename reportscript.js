@@ -10,6 +10,7 @@ let kelas = document.getElementById('kelas');
 let lokasi = document.getElementById("lokasi");
 let fasilitas = document.getElementById("fasilitas");
 let keluhan = document.getElementById("keluhan");
+let middle = document.getElementbyId("middle");
 
 trigger.addEventListener('click', function() {
     name.value = ''; // Clear the input field
@@ -45,6 +46,7 @@ form.addEventListener("submit",function(e){
 
         container.style.filter = "blur(10px)";
         gambar.style.filter ="blur(10px)";
+        middle.style.filter = "blur(10px);
 
         popup.classList.add("open-popup");
         let noclick = document.getElementById("no")
@@ -53,6 +55,7 @@ form.addEventListener("submit",function(e){
         noclick.addEventListener('click', function(){
             container.style.filter = "blur(0)";
             gambar.style.filter = "blur(0)";
+            middle.style.filter = "blur(0)";
             popup.classList.remove("open-popup");
         });
         
