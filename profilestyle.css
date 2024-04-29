@@ -466,6 +466,7 @@ button{
     width: 30px;
     position: relative;
     left: 960px;
+    cursor: pointer;
 }
 .del{
     position: relative;
