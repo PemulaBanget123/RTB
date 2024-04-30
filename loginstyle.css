@@ -10,7 +10,7 @@
 }
 body{
 /*     max-width: 100%; */
-    min-height: 175vh;
+    min-height: 100vh;
     background: url('./Asset/Background.png') no-repeat;
     background-size: cover;
     background-position: center;
@@ -23,7 +23,7 @@ footer{
     font-size: 12px;
     width: 100%;
     position: absolute;
-    min-height: 230px;
+    max-height: 240px;
     top: 800px;
     /* position: relative; */
     bottom: 0;
