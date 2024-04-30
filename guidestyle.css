@@ -253,9 +253,9 @@ footer{
     outline: none;
     position: relative;
     display: flex;
-    color:white;
     flex-direction: row;
     text-align: center;
+    color: white;
     border-radius: 30px;
 }
 #btn{
@@ -273,7 +273,7 @@ footer{
     flex-direction: column;
     max-height: 600px;
 }
-/*.imagepermit{
+/* .imagepermit{
     position: relative;
     align-self: center;
     margin-top: 10%; */
@@ -375,6 +375,7 @@ footer{
     visibility: hidden;
     left: 60px;
     width: 80%;
+    /* z-index: -1; */
 }
 .rules h2{
     font-family: 'Montserrat';
@@ -396,7 +397,7 @@ footer{
     padding-left: 20px;
 }
 .open-guide{
-    top: 1px;
+    /* top: 1px; */
     overflow-y: visible;
 }
 .open-footerguide{
