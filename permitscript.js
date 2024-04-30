@@ -1,6 +1,6 @@
 var btn = document.getElementById('btn');
 let form = document.getElementById("permitform");
-let image1 = document.getElementById("image1");
+// let image1 = document.getElementById("image1");
 let toggle = document.getElementById("toggle");
 let toggle1 = document.getElementById("toggle1");
 let middle = document.getElementById("middle");
@@ -10,7 +10,7 @@ function leftClick(){
     // toggle.classList.add("changetoggle");
     toggle.classList.remove("changetoggle");
     toggle1.classList.remove("changetoggle1");
-    image1.style.display ='none';
+    // image1.style.display ='none';
 }
 function rightClick(){
     btn.style.left = '110px'
@@ -18,7 +18,7 @@ function rightClick(){
     // toggle.classList.remove("changetoggle");
     toggle.classList.add("changetoggle");
     toggle1.classList.add("changetoggle1");
-    image1.style.display ='none';
+    // image1.style.display ='none';
 }
 
 let trigger = document.getElementById("deleteicon");
