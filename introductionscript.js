@@ -1,3 +1,7 @@
+let tobook = document.getElementById("tobook");
+tobook.addEventListener('click', function(){
+    window.location.href="index.html";
+})
 activeslideimg();
 
 function activeslideimg(activeSlide = 2) {
