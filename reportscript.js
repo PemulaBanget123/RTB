@@ -46,7 +46,7 @@ form.addEventListener("submit",function(e){
 
         container.style.filter = "blur(10px)";
         gambar.style.filter ="blur(10px)";
-        middle.style.filter = "blur(10px);
+        middle.style.filter = "blur(10px)";
 
         popup.classList.add("open-popup");
         let noclick = document.getElementById("no")
