@@ -10,7 +10,7 @@ let kelas = document.getElementById('kelas');
 let lokasi = document.getElementById("lokasi");
 let fasilitas = document.getElementById("fasilitas");
 let keluhan = document.getElementById("keluhan");
-let middle = document.getElementbyId("middle");
+let middle = document.getElementById("middle");
 
 trigger.addEventListener('click', function() {
     name.value = ''; // Clear the input field
