@@ -6,15 +6,17 @@ let toggle1 = document.getElementById("toggle1");
 let middle = document.getElementById("middle");
 function leftClick(){
     btn.style.left ='0'
-    form.classList.add("open-form");
-    toggle.classList.add("changetoggle");
+    // form.classList.add("open-form");
+    // toggle.classList.add("changetoggle");
+    toggle.classList.remove("changetoggle");
     toggle1.classList.remove("changetoggle1");
     image1.style.display ='none';
 }
 function rightClick(){
     btn.style.left = '110px'
-    form.classList.add("open-form");
-    toggle.classList.remove("changetoggle");
+    // form.classList.add("open-form");
+    // toggle.classList.remove("changetoggle");
+    toggle.classList.add("changetoggle");
     toggle1.classList.add("changetoggle1");
     image1.style.display ='none';
 }
@@ -41,14 +43,14 @@ form.addEventListener("submit",function(e){
         alert("Reason must be filled!");
     }
     else{
-        let popup = document.getElementById("popup")
-        let container = document.getElementById("container2")
+        let popup = document.getElementById("popup");
+        let container = document.getElementById("container2");
         container.style.filter = "blur(10px)";
         middle.style.filter = "blur(10px)";
 
         popup.classList.add("open-popup");
-        let noclick = document.getElementById("no")
-        let yesclick = document.getElementById("yes")
+        let noclick = document.getElementById("no");
+        let yesclick = document.getElementById("yes");
 
         noclick.addEventListener('click', function(){
             container.style.filter = "blur(0)";
