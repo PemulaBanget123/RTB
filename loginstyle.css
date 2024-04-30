@@ -10,7 +10,7 @@
 }
 body{
 /*     max-width: 100%; */
-    min-height: 100vh;
+    min-height: 145vh;
     background: url('./Asset/Background.png') no-repeat;
     background-size: cover;
     background-position: center;
