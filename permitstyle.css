@@ -332,7 +332,7 @@ form{
     position: relative;
     text-align: center;
     border-radius: 30px;
-    color: white;
+    color: black;
 }
 .toggle-btn1{
     font-family: 'Montserrat';
@@ -364,11 +364,11 @@ form{
     flex-direction: column;
     max-height: 600px;
 }
-.imagepermit{
+/* .imagepermit{
     position: relative;
     align-self: center;
     margin-top: 10%;
-}
+} */
 .newimage{
     position: relative;
     float: left;
@@ -533,8 +533,12 @@ form{
     visibility: visible;
 }
 .changetoggle{
-    color: black;
+    color: white;
 }
 .changetoggle1{
     color: black;
+}
+#permitform{
+    position: relative;
+    top: 50px;
 }
