@@ -161,6 +161,7 @@ body{
 
 .content h1 {
     font-size: 90px; 
+    font-family: 'Montserrat';
     font-weight: bolder; 
     text-shadow: 2px 2px 2px rgb(0, 0, 0);
     color: #0C0A72;
@@ -346,6 +347,34 @@ body{
 .box3, .boxx3{
   position: relative;
   top: 150px;
+}
+.friendship{
+    font-family: 'Montserrat';
+    color: #110EA1;
+    font-weight: lighter;
+}
+.tobook{
+    position: relative;
+    top: 20px;
+    border: 1px solid;
+    width: 190px;
+    height: 50px;
+    font-family: 'Montserrat';
+    background: #0C0A72;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2.5px 2.5px 5px rgba(0, 0, 0, 0.5); 
+}
+.tobook:hover{
+    background:#110EA1;
+    transition: all .3s ease-in-out;
+    
 }
 
 /* FOOTER */
