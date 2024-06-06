@@ -10,7 +10,8 @@
 }
 body{
 /*     max-width: 100%; */
-    min-height: 145vh;
+    /* max-height: 2vh; */
+    min-height: 128vh;
     background: url('./Asset/Background.png') no-repeat;
     background-size: cover;
     background-position: center;
@@ -195,7 +196,8 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    right: 120px;
+    right: 100px;
+    /* left: 20px; */
     font-size: 25px;
 }
 .forgot{
